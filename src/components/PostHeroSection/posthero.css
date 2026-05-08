@@ -1,0 +1,15 @@
+.text-content {
+    font-size: 54.55px;
+    width: 100%;
+    background-color: #F9F9F9;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    padding: 55px;
+}
+.text-content > span {
+    width: 62%;
+    color: #07170E;
+    line-height: 64px;
+}

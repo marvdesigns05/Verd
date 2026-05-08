@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Questrial, sans-serif;
+}
+
+.hero-bg {
+    padding: 32px;
+    height: 100vh;
+    background-color: #F9F9F9;
+}
+
+.hero-bg > .hero-container {
+    background: url(../../assets/images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 28px;
+    border-radius: 30px;
+}
+
+.hero-container > .coming-soon {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #D6F284;
+    border-radius: 35px;
+}
+
+.hero-container > .coming-soon img {
+    width: 21.142578125px;
+    height: 21.142578125px;
+}
+
+.coming-soon span {
+    font-size: 20px;
+}
+
+.hero-container .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-text > .large-text {
+    font-size: 102.85px;
+    width: 880px;
+    line-height: 97px;
+}
+
+.hero-text .small-text {
+    font-size: 24px;
+    width: 506px;
+    line-height: 32px;
+}
+
+.hero-container .input-container {
+    background-color: #fff;
+    padding: 9px 10px 9px 20px;
+    border-radius: 72px;
+}
+
+.input-container input {
+    border: none;
+    height: 43px;
+}
+
+.input-container .cta-btn {
+    padding: 12px 16px;
+    background-color: #D6F284;
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+}

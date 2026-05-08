@@ -1,0 +1,137 @@
+.features-container {
+    background-color: #F2FBD9;
+    width: 100%;
+    height: 100%;
+    height: 100%;
+    padding: 100px 380px;
+}
+
+.features-container .features-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.features-text-container .features-main-text {
+    font-size: 54.55px;
+    width: 450px;
+}
+
+.features-text-container .features-sub-text {
+    font-size: 16px;
+    width: 343px;
+    line-height: 21px;
+}
+
+.features-container .features-bento-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.features-bento-container .cards-align {
+    display: flex;
+    gap: 20px;
+}
+
+.cards-align .features-cards {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    padding: 32px;
+    border-radius: 16px;
+    gap: 20px;
+}
+
+.cards-align .cards-one {
+    width: 40%;
+    background-color: #FFFFFF;
+}
+
+.cards-align .cards-two {
+    width: 60%;
+    background-color: #FFFFFF;
+}
+
+.cards-align .cards-three {
+    width: 60%;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.cards-align .cards-four {
+    width: 40%;
+    background-color: #FFFFFF;
+}
+
+.features-cards .features-card-img  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 228.20745518172063px;
+    
+}
+
+.features-cards .card-img-two img{
+    width: 481px !important;
+}
+
+.features-cards .card-img-one img{
+   width: 337.90374265104555px !important;
+}
+
+.features-cards .card-img-three {
+    display: flex;
+    justify-content: left;
+}
+
+.features-cards .card-img-three img{
+   width: 506px !important;
+   height: 307.24591064453125px !important;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.features-cards .card-img-four img{
+   width: 268.7674560546875px !important;
+   height: 254px;
+}
+
+.features-cards .features-card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.cards-align .features-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cards-align .features-text .card-main-txt {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cards-align .features-text .card-sub-txt {
+    font-size: 14px;
+}
+
+.features-text .txt-one {
+    width: 363px;
+}
+
+.features-text .txt-two {
+    width: 452px;
+}
+
+.features-text .txt-three {
+    width: 363px;
+}
+
+.features-text .txt-four {
+    width: 255px;
+}
