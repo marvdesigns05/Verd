@@ -1,11 +1,13 @@
 import React from 'react'
-import logo from '../../assets/images/logo.png';
-import copy from '../../assets/images/copy.png'
-import linkedin from '../../assets/images/linkedin.png'
-import x from '../../assets/images/x.png'
-import insta from '../../assets/images/insta.png'
-import facebook from '../../assets/images/facebook.png'
-import './footer.css'
+import logo from '../../../public/logo.png';
+import linkedin from '../../assets/images/linkedin.png';
+import x from '../../assets/images/x.png';
+import insta from '../../assets/images/insta.png';
+import facebook from '../../assets/images/facebook.png';
+import footer from '../../assets/images/footer.png';
+
+import './footer.css';
+import '../HeroSection/hero.css'
 
 const Footer = () => {
   return (
@@ -21,17 +23,17 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="input-container">
-                <input type="email" placeholder='Enter email address'/><span><button className="cta-btn">Get Early Access</button></span>
+            <div className="footer-input-container">
+                <input type="email" placeholder='Enter email address'/><span><button className="foot-cta-btn">Get Early Access</button></span>
             </div>
             </div>
             
             <div className="footer-contents">
                 <div className="logo-text-container">
-                    <div className="nav-logo-container">
+                    <div className="footer-logo-container">
                         <a href="#home">
                             <img src={logo} alt="logo" />
-                            <img src={copy} alt="copyright" className='copy'/>
+                            <span className='copy'> &copy; </span>
                             <span>verd</span>
                         </a>
                     </div>
@@ -58,19 +60,19 @@ const Footer = () => {
                     </div>
                     <div className="socials-links">
                         <span>
-                            <img src="#" alt="image" />
+                            <img src={linkedin} alt="image" />
                             <a href="#">LinkedIn</a>    
                         </span>
                         <span>
-                            <img src="#" alt="image" />
+                            <img src={x} alt="image" />
                             <a href="#">Twitter</a>    
                         </span>
                         <span>
-                            <img src="#" alt="image" />
+                            <img src={insta} alt="image" />
                             <a href="#">Instagram</a>    
                         </span>
                         <span>
-                            <img src="#" alt="image" />
+                            <img src={facebook} alt="image" />
                             <a href="#">Facebook</a>    
                         </span>
                     </div>
@@ -78,9 +80,19 @@ const Footer = () => {
             </div>
 
             <div className="copyright-container">
-                <span>© 2026 VerdFinance. All rights reserved.</span>
+                <span> &copy; 2026 VerdFinance. All rights reserved.</span>
             </div>
+
+            <div className="large-footer">
+                <span className="large-text">
+                    <img src={footer} alt="" />
+                </span>
+            </div>
+
+            <div className="gradient"></div>
         </div>
+
+        
     </>
   )
 }

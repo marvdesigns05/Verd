@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import logo from './assets/images/logo.png'
 import Hero from './components/HeroSection/Hero'
 import Navbar from './components/NavbarSection/navbar'
 import PostHero from './components/PostHeroSection/PostHero'
@@ -9,8 +8,6 @@ import Faq from './components/FAQ/faq'
 import Footer from './components/Footer/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Navbar />

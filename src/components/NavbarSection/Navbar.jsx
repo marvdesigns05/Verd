@@ -6,7 +6,8 @@ import './navbar.css';
 const Navbar = () => {
   return (
     <>
-        <div className="nav-container">
+    <div className="general-container">
+         <div className="nav-container">
             <div className="nav-logo-container">
                 <a href="#home">
                     <img src={logo} alt="logo" />
@@ -23,6 +24,8 @@ const Navbar = () => {
                 <a href="#join" className="cta-btn">Join Waitlist</a>
             </div>
         </div>
+    </div>
+       
     </>
   )
 }

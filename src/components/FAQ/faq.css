@@ -88,3 +88,23 @@
   color: #444;
   background-color: #fff;
 }
+
+
+
+/* MObile Responsiveness */
+
+@media (max-width: 768px) {
+
+  .faq-wrapper {
+    gap: 25px;
+  }
+  .faq-text .faq-title {
+    font-size: 32px;
+    width: 250px;
+    line-height: 100%;
+  }
+
+  .faq-text p {
+    font-size: 12px;
+  }
+}

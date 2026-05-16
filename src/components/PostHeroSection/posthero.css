@@ -13,3 +13,20 @@
     color: #07170E;
     line-height: 64px;
 }
+
+
+
+
+/* ---- Mobile Responsiveness ----- */
+
+@media (max-width: 768px) {
+    .text-content {
+        padding: 25px;
+    }
+
+    .text-content > span {
+        font-size: 22.97px;
+        line-height: 27.28px;
+        width: 600px;
+    }
+}

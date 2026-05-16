@@ -84,3 +84,65 @@
     border: none;
     cursor: pointer;
 }
+
+
+/* ---- Mobile Responsiveness ----- */
+
+@media (max-width: 768px) {
+    .hero-bg {
+    padding: 16px;
+    height: 100vh;
+    background-color: #F9F9F9;
+    }
+    .hero-bg > .hero-container {
+        height: 95%;
+    }
+
+    .hero-container .hero-text {
+        text-align: center;
+    }
+
+    .hero-text > .large-text {
+    font-size: 38px;
+    line-height: 36.93px;
+    width: 316px;
+    letter-spacing: -3%;
+
+    }
+
+    .hero-text > .small-text {
+    font-size: 14px;
+    width: 266px;
+    line-height: 19px;
+
+    }
+
+    .hero-container > .coming-soon {
+        padding: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-container > .coming-soon img {
+    width: 18px;
+    height: 18px;
+    }
+    .coming-soon span {
+        font-size: 12px;
+    }
+
+    .input-container .cta-btn {
+        font-size: 11.67px;
+    }
+
+    .input-container input {
+        height: 31.498733520507812px;
+        margin-left: 10px;
+    }
+
+    .hero-container .input-container {
+        padding: 6.56px 7.29px;
+    }
+}

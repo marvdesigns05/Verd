@@ -72,20 +72,20 @@
 .why-cards-container .card-1 {
     position: absolute;
     top: 0;
-    left: 16%;
+    left: 13%;
     transform: rotate(-2.33deg);
 }
 
 .why-cards-container .card-2 {
     position: absolute;
-    bottom: 10%;
+    bottom: 0;
     transform: rotate(-5.55deg);
 }
 
 .why-cards-container .card-3 {
     position: absolute;
     top: 0;
-    right: 16%;
+    right: 13%;
     transform: rotate(4.52deg);
 }
 
@@ -154,7 +154,7 @@
     marker-end: url(#arrowhead);
 }
 
-/* hide mobile lines on desktop */
+
 .line-mobile {
     display: none;
 }
@@ -171,9 +171,20 @@
 
 @media screen and (max-width: 768px) {
 
+
+    .why-text-container .why-main-text span{
+        font-size: 32px;
+    }
+
+    .why-text-container .why-sub-text {
+        font-size: 12px;
+        width: 348px;
+        line-height: 16px;
+    }
+
     .why-container {
         height: auto;
-        padding: 80px 20px;
+        padding: 80px 0px;
     }
 
     .why-container .why-bentos {
@@ -183,8 +194,12 @@
     .why-bentos .why-cards-container {
         display: flex;
         flex-direction: column;
-        gap: 80px;
+        gap: 140.36px;
         min-height: 900px;
+    }
+
+    svg {
+        display: none;
     }
 
     .why-cards-container .card-1,
@@ -195,12 +210,17 @@
         left: unset;
         right: unset;
         bottom: unset;
-        transform: rotate(0deg);
     }
+
+    .why-cards .img-right > img {
+    width: 100%;
+    transform: rotate(-4.52deg);
+}
 
     .why-cards-container .why-cards {
         width: 100%;
         max-width: 350px;
+        padding: 20px 10px 0px 10px;
     }
 
     /* show mobile lines */

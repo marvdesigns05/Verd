@@ -2,7 +2,6 @@
     background-color: #F2FBD9;
     width: 100%;
     height: 100%;
-    height: 100%;
     padding: 100px 380px;
 }
 
@@ -29,11 +28,15 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .features-bento-container .cards-align {
     display: flex;
     gap: 20px;
+    width: 100%;
 }
 
 .cards-align .features-cards {
@@ -134,4 +137,107 @@
 
 .features-text .txt-four {
     width: 255px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .features-container {
+        padding: 80px 0px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 54px;
+        z-index: -1;
+    }
+
+    .features-text-container .features-main-text {
+        font-size: 32px;
+        width: 260px;
+    }
+
+    .features-text-container .features-sub-text {
+        font-size: 12px;
+        line-height: 16px;
+        width: 260px;
+    }
+
+    .features-container .features-bento-container {
+        gap: 0px !important;
+    }
+
+    .features-bento-container .cards-align {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+        gap: 16px;
+        width: 100% !important;
+    }
+
+    .cards-align .features-cards {
+        width: 100%;
+    }
+
+    .features-cards .features-card-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .features-cards .features-card-img img{
+        width: 254.14381039585405px !important;
+    }
+    
+    .features-cards .card-img-two img{
+        width: 310px !important;
+        height: 182.18295288085938px;
+    }
+
+    .features-cards .card-img-one img{
+        width: 284.14381039585405px !important;
+    }
+
+    .features-cards .card-img-three img{
+        width: 400px !important;
+        height: 307.24591064453125px !important;
+        position: absolute;
+        top: 30px;
+        left: 0;
+    }
+
+    .features-cards .card-img-four img{
+    width: 313.1627960205078px !important;
+    height: 254px;
+    }
+
+    .cards-align .features-text .card-main-txt {
+    font-size: 16px;
+    font-weight: 600;
+    }
+
+    .cards-align .features-text .card-sub-txt {
+        width: 283px;
+        font-size: 12px;
+    }
+
+    .features-text .txt-one {
+        width: 251px !important;
+    }
+
+    .features-text .txt-two {
+        width: 245px !important;
+    }
+
+    .features-text .txt-three {
+        width: 241px !important;
+    }
+
+    .features-text .txt-four {
+        width: 218px !important;
+    }
 }

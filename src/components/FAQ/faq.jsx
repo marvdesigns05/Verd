@@ -18,22 +18,22 @@ const Faq = () => {
   {
     question: "Do I need crypto experience?",
     answer:
-      "Verd is a DeFi-powered platform that helps you save and grow your money using stable on-chain assets.",
+      "No. Verd is designed to be simple and accessible, whether you're new or familiar with crypto.",
   },
   {
     question: "How is my money managed?",
     answer:
-      "Verd is a DeFi-powered platform that helps you save and grow your money using stable on-chain assets.",
+      "Funds are secured on-chain and allocated into structured systems designed for stability and growth.",
   },
   {
     question: "Can I withdraw anytime?",
     answer:
-      "Verd is a DeFi-powered platform that helps you save and grow your money using stable on-chain assets.",
+      "Yes. You can withdraw your funds in fiat or crypto whenever you need.",
   },
   {
     question: "When will Verd be available?",
     answer:
-      "Verd is a DeFi-powered platform that helps you save and grow your money using stable on-chain assets.",
+      "We’re currently building. Join the waitlist to get early access.",
   },
 ];
 
