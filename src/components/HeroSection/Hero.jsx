@@ -8,7 +8,7 @@ const Hero = () => {
 
   const showToast = (type, msg) => {
     setToast({ show: true, type, msg });
-    setTimeout(() => setToast({ show: false, type: '', msg: '' }), 4000);
+    setTimeout(() => setToast({ show: false, type: '', msg: '' }), 5000);
   };
 
   const handleJoinWaitlist = async () => {

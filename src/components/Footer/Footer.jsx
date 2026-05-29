@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../assets/images/favicon.png';
 import linkedin from '../../assets/images/linkedin.png';
 import x from '../../assets/images/x.png';
@@ -10,6 +10,34 @@ import './footer.css';
 import '../HeroSection/hero.css'
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+  const [toast, setToast] = useState({ show: false, type: '', msg: '' });
+
+  const showToast = (type, msg) => {
+    setToast({ show: true, type, msg });
+    setTimeout(() => setToast({ show: false, type: '', msg: '' }), 4000);
+  };
+
+  const handleJoinWaitlist = async () => {
+    if (!email) return;
+
+    try {
+      const res = await fetch('http://localhost:3001/api/waitlist', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+
+      const result = await res.json();
+      if (!res.ok) throw new Error(result.error);
+
+      setEmail('');
+      showToast('success', <><strong>Congratulations!!! 🎉</strong><br/>You're on the list! Check your inbox.</>);
+    } catch (err) {
+      showToast('error', <><strong>Uh oh!</strong><br/>Something went wrong. Try again.</>);
+    }
+  };
+
   return (
     <>
         <div className="footer-container">
@@ -24,7 +52,17 @@ const Footer = () => {
             </div>
 
             <div className="footer-input-container">
-                <input type="email" placeholder='Enter email address'/><span><button className="foot-cta-btn">Get Early Access</button></span>
+                <input
+                  type="email"
+                  placeholder='Enter email address'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <span>
+                  <button className="foot-cta-btn" onClick={handleJoinWaitlist}>
+                    Get Early Access
+                  </button>
+                </span>
             </div>
             </div>
             
@@ -61,19 +99,19 @@ const Footer = () => {
                     <div className="socials-links">
                         <span>
                             <img src={linkedin} alt="image" />
-                            <a href="#">LinkedIn</a>    
+                            <a href="https://www.linkedin.com/company/verd-finance/">LinkedIn</a>    
                         </span>
                         <span>
                             <img src={x} alt="image" />
-                            <a href="#">Twitter</a>    
+                            <a href="https://x.com/verdfinance">Twitter</a>    
                         </span>
                         <span>
                             <img src={insta} alt="image" />
-                            <a href="#">Instagram</a>    
+                            <a href="https://www.instagram.com/verdfinance?igsh=NmUzMDExZ2xzdHR4">Instagram</a>    
                         </span>
                         <span>
                             <img src={facebook} alt="image" />
-                            <a href="#">Facebook</a>    
+                            <a href="https://www.facebook.com/share/1Gfsy99SZP/">Facebook</a>    
                         </span>
                     </div>
                 </div>
@@ -92,7 +130,10 @@ const Footer = () => {
             <div className="gradient"></div>
         </div>
 
-        
+        {/* Toast Notification */}
+        <div className={`toast ${toast.type} ${toast.show ? 'show' : ''}`}>
+          <span>{toast.msg}</span>
+        </div>
     </>
   )
 }
