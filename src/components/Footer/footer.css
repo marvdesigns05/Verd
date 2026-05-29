@@ -99,8 +99,8 @@
     gap: 8px;
 }
 
-.footer-logo-container a img:first-child {
-    width: 51.62071228027344px;
+.footer-logo-container a img {
+    width: 172px;
     height: 51.62071228027344px;
 }
 
@@ -155,9 +155,9 @@
 
 .socials-container .socials-links span {
     display: flex;
-    gap: 5px;
     justify-content: center;
     align-items: center;
+
 }
 
 .socials-container .socials-links span img {
@@ -165,10 +165,19 @@
     height: 19.93px;
 }
 
+.twitter {
+    width: 18px !important;
+    height: 18px !important;
+}
+
 .socials-links a {
     text-decoration: none;
     color: #fff;
     font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .footer-container .copyright-container {

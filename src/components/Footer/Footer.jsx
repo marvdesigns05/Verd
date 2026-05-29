@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../../assets/images/favicon.png';
+import logo from '../../assets/images/logo-footer.png';
 import linkedin from '../../assets/images/linkedin.png';
 import x from '../../assets/images/x.png';
 import insta from '../../assets/images/insta.png';
@@ -71,8 +71,6 @@ const Footer = () => {
                     <div className="footer-logo-container">
                         <a href="#home">
                             <img src={logo} alt="logo" />
-                            <span className='copy'> &copy; </span>
-                            <span>verd</span>
                         </a>
                     </div>
 
@@ -98,20 +96,19 @@ const Footer = () => {
                     </div>
                     <div className="socials-links">
                         <span>
-                            <img src={linkedin} alt="image" />
-                            <a href="https://www.linkedin.com/company/verd-finance/">LinkedIn</a>    
+                            <a href="https://www.linkedin.com/company/verd-finance/"><img src={linkedin} alt="image" /> LinkedIn</a>    
                         </span>
                         <span>
-                            <img src={x} alt="image" />
-                            <a href="https://x.com/verdfinance">Twitter</a>    
+                            
+                            <a href="https://x.com/verdfinance"><img src={x} alt="image" className='twitter'/>Twitter</a>    
                         </span>
                         <span>
-                            <img src={insta} alt="image" />
-                            <a href="https://www.instagram.com/verdfinance?igsh=NmUzMDExZ2xzdHR4">Instagram</a>    
+                            
+                            <a href="https://www.instagram.com/verdfinance?igsh=NmUzMDExZ2xzdHR4"><img src={insta} alt="image" />Instagram</a>    
                         </span>
                         <span>
-                            <img src={facebook} alt="image" />
-                            <a href="https://www.facebook.com/share/1Gfsy99SZP/">Facebook</a>    
+                            
+                            <a href="https://www.facebook.com/share/1Gfsy99SZP/"><img src={facebook} alt="image" />Facebook</a>    
                         </span>
                     </div>
                 </div>

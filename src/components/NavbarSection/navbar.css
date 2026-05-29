@@ -26,22 +26,8 @@
 }
 
 .nav-logo-container img {
-    width: 36.01435470581055px;
+    width: 119.99990844726562px;
     height: 36.01435470581055px;
-}
-
-.nav-logo-container .copy {
-    position: absolute;
-    left: 69px;
-    top: 40px;
-    width: 6px;
-    height: 6px;
-}
-
-
-.nav-logo-container span {
-    font-size: 36.01435470581055px;
-    color: #144027;
 }
 
 .nav-container .nav-link-container {
@@ -111,7 +97,7 @@
         border-radius: 50px 50px;
         padding: 30px 10px;
         top: 1.8%;
-        /* backdrop-filter: blur(20px); */
+        backdrop-filter: blur(20px);
     }
 
     .nav-container .nav-link-container a {
@@ -138,28 +124,15 @@
     }
 
     .nav-container .nav-logo-container > a {
-        border: none;
-        background-color: unset;
-        border-radius: unset;
-        padding: 0;
-        margin: 0;
+        background: transparent !important;
+        border: none !important;
+        backdrop-filter: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
     }
 
     .nav-logo-container img {
-    width: 26.644651412963867px;
+    width: 78.98565673828125px;
     height: 26.705209732055664px;
-    }
-
-    .nav-logo-container .copy {
-    position: absolute;
-    left: 29px;
-    top: 19px;
-    width: 3.077878475189209px;
-    height: 3.077878475189209px;
-}
-
-    .nav-logo-container span {
-    font-size: 26.01435470581055px;
-    color: #144027;
     }
 }

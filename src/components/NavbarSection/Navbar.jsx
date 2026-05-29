@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from '../../assets/images/logo.png';
-import copy from '../../assets/images/copy.png'
+import logo from '../../assets/images/logo-img.png';
 import './navbar.css';
 
 const Navbar = () => {
@@ -11,8 +10,6 @@ const Navbar = () => {
                 <div className="nav-logo-container">
                     <a href="#home">
                         <img src={logo} alt="logo" />
-                        <img src={copy} alt="copyright" className='copy'/>
-                        <span>verd</span>
                     </a>
                     
                 </div>
